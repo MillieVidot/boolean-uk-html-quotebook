@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+h1 {
+  color: white;
+  font-family: serif;
+}
+
+h2 {
+  margin: 10px 0px;
+}
+
+sub {
+  font-family: "Courgette", cursive;
+  font-variant: small-caps;
+  text-align: right;
+  line-height: 1.5em;
+}
+
+/* Why isn't this centerd :) pls help */
+.container {
+  display: grid;
+  grid-template:
+    "header header header" 80px
+    ". main ." 1fr /
+    1fr 2fr 1fr;
+
+  background-color: rgb(245, 245, 245);
+}
+
+.header {
+  grid-area: header;
+  display: grid;
+  background-color: rgb(136, 19, 35);
+
+  align-items: center;
+  padding: 20px;
+}
+
+.main {
+  grid-area: main;
+  display: grid;
+
+  grid-gap: 10px;
+  width: 500px;
+}
+
+.main p {
+  font-family: "Courgette", cursive;
+  text-align: center;
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+.dev-quotes,
+.af-quotes {
+  padding: 10px;
+
+  display: grid;
+  grid-gap: 10px;
+}
+
+.quote1,
+.quote2 {
+  display: grid;
+
+  align-items: center;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 4px 4px 8px 0px #ebebeb;
+}
+.quote1 {
+  background-color: rgb(183, 211, 183);
+}
+
+.quote2 {
+  background-color: rgb(182, 208, 230);
+}
+
+/* Sort of worked not really */
+.af-quotes p:nth-child(1) {
+  display: grid;
+  background-color: red;
+}
